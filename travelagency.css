@@ -1,0 +1,181 @@
+/* Reset */
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Carousel Images */
+.carousel-item img {
+  height: 600px !important;
+  object-fit: cover;
+}
+
+/* Navigation Section */
+.navbar-section {
+  z-index: 1000;
+}
+
+.viewplans {
+  border: none;
+  width: 150px;
+  height: 50px;
+  background-color: #eb7a34;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.viewplans:hover {
+  background-color: #cf682b;
+}
+
+/* Explore Section Overlay */
+.contenttt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore {
+  text-align: center;
+}
+
+.explore-box {
+  background-color: rgba(242, 245, 245, 0.6);
+  border-radius: 20px;
+  color: darkred;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.explore li {
+  color: wheat;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.explore p {
+  max-width: 570px;
+  color: white;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+/* Buttons Section */
+.buttonss {
+  display: flex;
+  gap: 1rem;
+}
+
+.buttonss h5 {
+  padding-top: 12px;
+  text-align: center;
+  color: darkred;
+  background-color: #f6f2f0;
+  border-radius: 10px;
+  width: 160px;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonss h5:hover {
+  background-color: orangered;
+  color: white;
+}
+
+/* Popular Destinations */
+.popular-box {
+  background-color: rgb(254, 211, 168);
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  opacity: 0.9;
+  text-align: center;
+  color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.handpicked {
+  padding-top: 5px;
+  font-size: 40px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .viewplans {
+    display: none !important;
+  }
+
+  .explore li {
+    font-size: 40px;
+  }
+
+  .explore p {
+    font-size: 16px;
+  }
+
+  .buttonss {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .buttonss h5 {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .carousel-item img {
+    height: 400px;
+  }
+}
+
+@media (min-width: 576px) {
+  .explore li {
+    font-size: 28px;
+  }
+
+  .explore p {
+    font-size: 14px;
+  }
+
+  .explore-box {
+    width: 80%;
+    height: auto;
+    padding: 0.7rem 1rem;
+  }
+
+  .buttonss h5 {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .popular-box {
+    width: 90%;
+  }
+}
